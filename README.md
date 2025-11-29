@@ -33,11 +33,16 @@ Searches for patents where you're listed as an inventor and formats the data for
 
 ### LinkedIn API Key (Optional)
 **Optional** for automated LinkedIn upload:
-- **Get your key**: https://developer.linkedin.com/
-- Create a developer app and request API permissions
+- **Apply for API access**: https://developer.linkedin.com/
+- **Documentation**: https://learn.microsoft.com/en-us/linkedin/
+- **Application process**:
+  1. Create a LinkedIn Developer account
+  2. Create a new app at https://www.linkedin.com/developers/apps
+  3. Request "Profile API" and "Marketing Developer Platform" products
+  4. Wait for approval (can take several days)
 - ⚠️ **Warning**: LinkedIn API access is increasingly restrictive for personal use
-- Many personal applications are rejected
-- Manual upload is recommended instead
+- Many personal applications are rejected without business justification
+- Manual upload is recommended as the primary method
 
 ## Setup
 
