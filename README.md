@@ -52,63 +52,65 @@ pip3 install requests beautifulsoup4
 
 ```bash
 # 1. Extract patents with full file generation
-python3 uspto_patent_extractor.py "Ashok Raj" \
-  --assignee "Intel Corporation" \
+python3 uspto_patent_extractor.py "John Smith" \
+  --assignee "Tech Corporation" \
   --api-key YOUR_USPTO_API_KEY \
-  -o ashok_intel_patents.json
+  -o john_patents.json
 
 # This creates three files:
-# - ashok_intel_patents.json (LinkedIn-formatted)
-# - ashok_intel_patents_raw.json (raw USPTO data)  
-# - ashok_intel_patents.csv (manual upload format)
+# - john_patents.json (LinkedIn-formatted)
+# - john_patents_raw.json (raw USPTO data)  
+# - john_patents.csv (manual upload format)
 ```
 
 ### Display Options
 
 ```bash
 # Quick table view (Patent Number + Title)
-python3 uspto_patent_extractor.py "Ashok Raj" \
-  --assignee "Intel Corporation" \
+python3 uspto_patent_extractor.py "Jane Doe" \
+  --assignee "Tech Corporation" \
   --api-key YOUR_USPTO_API_KEY \
   --list
 
 # Detailed view (perfect for manual LinkedIn upload)
-python3 uspto_patent_extractor.py "Ashok Raj" \
-  --assignee "Intel Corporation" \
+python3 uspto_patent_extractor.py "Jane Doe" \
+  --assignee "Tech Corporation" \
   --api-key YOUR_USPTO_API_KEY \
   --detail
 
 # Detailed view with file saving
-python3 uspto_patent_extractor.py "Ashok Raj" \
-  --assignee "Intel Corporation" \
+python3 uspto_patent_extractor.py "Jane Doe" \
+  --assignee "Tech Corporation" \
   --api-key YOUR_USPTO_API_KEY \
   --detail -o detailed_patents.json
 ```
 
 ### Example Output (Detailed View)
 ```
-=== Found 49 Patents (Detailed View) ===
+=== Found 25 Patents (Detailed View) ===
 
 ================================================================================
-Patent 1 of 49
+Patent 1 of 25
 ================================================================================
-📄 Title: Offload data transfer engine for a block data transfer interface
-🔢 Patent Number: US10157142
-👥 Inventors: Sivakumar Radhakrishnan, Vishal Verma, Chet R. Douglas, Ashok Raj, Narayan Ranganathan, Dan Williams
-🔗 URL: https://patents.google.com/patent/US10157142
-📋 Abstract: In one embodiment, a block data transfer interface employing
-            offload data transfer engine in accordance with the present
-            description includes an offload data transfer engine executing...
-📅 Issue Date: 2018-12-18
+📄 Title: Method and apparatus for data processing optimization
+🔢 Patent Number: US10123456
+👥 Inventors: Jane Doe, John Smith, Alice Johnson
+🔗 URL: https://patents.google.com/patent/US10123456
+📋 Abstract: A system and method for optimizing data processing operations
+            in distributed computing environments. The invention provides
+            improved performance through novel algorithmic approaches...
+📅 Issue Date: 2023-03-15
 
 📊 Patent Portfolio Summary:
-• **49 total patents**
-• Patent timeline: **2004 - 2025** (22 years)
+• **25 total patents**
+• Patent timeline: **2015 - 2023** (9 years)
 • Key technology areas:
-  - **Memory & Cache Management** (12 patents)
-  - **Virtualization & I/O** (9 patents)
-  - **Error Handling & Machine Check** (10 patents)
-• Average innovation rate: **2.2 patents/year**
+  - **Data Processing & Algorithms** (8 patents)
+  - **Distributed Systems** (6 patents)
+  - **Machine Learning** (5 patents)
+  - **Network Security** (4 patents)
+  - **User Interface Design** (2 patents)
+• Average innovation rate: **2.8 patents/year**
 ```
 
 ### Manual LinkedIn Upload (Recommended)
