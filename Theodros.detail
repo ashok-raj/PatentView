@@ -1,0 +1,654 @@
+Searching for patents by inventor: Theodros Yigzaw assigned to: Intel Corporation
+Searching USPTO PatentsView API...
+✓ Exact match found: Theodros Yigzaw - Utilization of non-volatile random access memory for information storage in response to error conditions
+✓ Exact match found: Theodros Yigzaw - Apparatus and method for system physical address to memory module address translation
+✓ Exact match found: Theodros Yigzaw - Handling of error prone cache line slots of memory side cache of multi-level system memory
+✓ Exact match found: Theodros Yigzaw - Apparatus and method for detecting and recovering from data fetch errors
+✓ Exact match found: Theodros Yigzaw - Read from memory instructions, processors, methods, and systems, that do not take exception on defective data
+✓ Exact match found: Theodros Yigzaw - Enabling error status and reporting in a machine check architecture
+✓ Exact match found: Theodros Yigzaw - Hardware apparatuses and methods to check data storage devices for transient faults
+✓ Exact match found: Theodros Yigzaw - System and method to increase availability in a multi-level memory configuration
+✓ Exact match found: Theodros Yigzaw - Delayed error processing
+✓ Exact match found: Theodros Yigzaw - Apparatus and method for detecting and recovering from data fetch errors
+✓ Exact match found: Theodros Yigzaw - Read from memory instructions, processors, methods, and systems, that do not take exception on defective data
+✓ Exact match found: Theodros Yigzaw - System, apparatus and method for memory mirroring in a buffered memory architecture
+✓ Exact match found: Theodros Yigzaw - Hardware unit for reverse translation in a processor
+✓ Exact match found: Theodros Yigzaw - Device, system, and method to concurrently store multiple PMON counts in a single register
+✓ Exact match found: Theodros Yigzaw - Cloud scale server reliability management
+✓ Exact match found: Theodros Yigzaw - Apparatus and method for detecting and recovering from data fetch errors
+✓ Exact match found: Theodros Yigzaw - Adaptive error correction to improve system memory reliability, availability, and serviceability (RAS)
+✓ Exact match found: Theodros Yigzaw - Performance prioritization in multi-threaded processors
+✓ Exact match found: Theodros Yigzaw - Injecting a data error into a writeback path to memory
+✓ Exact match found: Theodros Yigzaw - Mechanism for advanced server machine check recovery and associated system software enhancements
+✓ Exact match found: Theodros Yigzaw - Machine check summary register
+✓ Exact match found: Theodros Yigzaw - Secure error handling
+✓ Exact match found: Theodros Yigzaw - Apparatus and method for implement a multi-level memory hierarchy
+✓ Exact match found: Theodros Yigzaw - Hardware apparatuses and methods to check data storage devices for transient faults
+✓ Exact match found: Theodros Yigzaw - Recovery from multiple data errors
+✓ Exact match found: Theodros Yigzaw - Method to increase cloud availability and silicon isolation using secure enclaves
+✓ Exact match found: Theodros Yigzaw - Clearing poison status on read accesses to volatile memory regions allocated in non-volatile memory
+✓ Exact match found: Theodros Yigzaw - Instruction and logic for machine checking communication
+✓ Exact match found: Theodros Yigzaw - Interfacing with block-based storage in a processor
+Searching Google Patents...
+Searching: https://patents.google.com/?q=inventor%3A%22Theodros+Yigzaw%22+assignee%3A%22Intel+Corporation%22
+No matching patents found. Manual search: https://patents.google.com/?q=inventor%3A%22Theodros+Yigzaw%22+assignee%3A%22Intel+Corporation%22
+
+=== Found 29 Patents (Detailed View) ===
+
+================================================================================
+Patent 1 of 29
+================================================================================
+📄 Title: Utilization of non-volatile random access memory for information storage in response to error conditions
+🔢 Patent Number: US10157005
+👥 Inventors: Robert C. Swanson, Theodros Yigzaw, Chris Ackles, Celeste M. Brown, Tony S. Baker
+🔗 URL: https://patents.google.com/patent/US10157005
+📋 Abstract: Methods, apparatus, systems and articles of manufacture (e.g.,
+            physical storage media) to utilize non-volatile random access
+            memory for information storage in response to error conditions
+            are disclosed. Example methods disclosed herein include
+            accessing, with a power control unit associated with a
+            processor, first information describing available capacities of
+            respective reserved regions of a plurality of non-volatile
+            memory modules, the respective reserved regions of the non-
+            volatile memory modules being separate from respective host-
+            visible regions of the non-volatile memory modules. Disclosed
+            example methods also include configuring, with the power
+            control unit, an information storage architecture based on the
+            first information. Disclosed example methods further include
+            storing, with the power control unit, second information in one
+            or more of the respective reserved regions of the non-volatile
+            memory modules in accordance with the information storage
+            architecture.
+📅 Issue Date: 2018-12-18
+
+================================================================================
+Patent 2 of 29
+================================================================================
+📄 Title: Apparatus and method for system physical address to memory module address translation
+🔢 Patent Number: US10162761
+👥 Inventors: Mohan J. Kumar, Sarathy Jayakumar, Ashok Raj, Theodros Yigzaw, Ronald N. Story, Sreenivas Mandava
+🔗 URL: https://patents.google.com/patent/US10162761
+📋 Abstract: An apparatus and method are described for system physical
+            address to memory module address translation. For example, one
+            embodiment of an apparatus comprises: a fetch circuit of a core
+            to fetch a system physical address (SPA) translate instruction
+            from memory; a decode circuit of the core to decode the SPA
+            translate instruction; a first register to store an SPA
+            associated with the SPA translate instruction; a memory
+            controller comprising one or more channel controllers to
+            initiate a translation using the SPA, the memory controller to
+            transmit a translation request to a first channel controller;
+            the first channel controller to synthesize a response including
+            dual in-line memory module (DIMM) address information; and a
+            second register to store the DIMM address information to be
+            used to identify the DIMM during subsequent memory
+            transactions.
+📅 Issue Date: 2018-12-25
+
+================================================================================
+Patent 3 of 29
+================================================================================
+📄 Title: Handling of error prone cache line slots of memory side cache of multi-level system memory
+🔢 Patent Number: US10185619
+👥 Inventors: Mohan J. Kumar, Robert C. Swanson, Ashok Raj, Theodros Yigzaw
+🔗 URL: https://patents.google.com/patent/US10185619
+📋 Abstract: An apparatus is described that includes memory controller logic
+            circuitry to interface with a memory side cache of a multi-
+            level system memory. The memory controller logic circuitry
+            includes error tracking circuitry to track errors of cache line
+            slots in the memory side cache. The memory controller logic
+            circuitry also comprises faulty list circuitry to store
+            identifiers of faulty cache line slots that are deemed to be
+            excessively error prone. The memory controller logic circuitry
+            is to declare a miss in the memory side cache for requests that
+            map to cache line slots identified in the faulty list.
+📅 Issue Date: 2019-01-22
+
+================================================================================
+Patent 4 of 29
+================================================================================
+📄 Title: Apparatus and method for detecting and recovering from data fetch errors
+🔢 Patent Number: US10223204
+👥 Inventors: Hisham Shafi, Mohan J. Kumar, Shlomo Raikin, Ganapati Srinivasa, Ehud Cohen, Zeev Sperber, Jose A. Vargas, Michael Mishaeli, Theodros Yigzaw, Julius Mandelblat, Geeyarpuram N. Santhanakrishnan
+🔗 URL: https://patents.google.com/patent/US10223204
+📋 Abstract: An apparatus and method are described for detecting and
+            correcting data fetch errors within a processor core. For
+            example, one embodiment of an instruction processing apparatus
+            for detecting and recovering from data fetch errors comprises:
+            at least one processor core having a plurality of instruction
+            processing stages including a data fetch stage and a retirement
+            stage; and error processing logic in communication with the
+            processing stages to perform the operations of: detecting an
+            error associated with data in response to a data fetch
+            operation performed by the data fetch stage; and responsively
+            performing one or more operations to ensure that the error does
+            not corrupt an architectural state of the processor core within
+            the retirement stage.
+📅 Issue Date: 2019-03-05
+
+================================================================================
+Patent 5 of 29
+================================================================================
+📄 Title: Read from memory instructions, processors, methods, and systems, that do not take exception on defective data
+🔢 Patent Number: US10296416
+👥 Inventors: Hisham Shafi, Mohan J. Kumar, Sarathy Jayakumar, Ron Gabor, Sergiu D. Ghetie, Ashok Raj, Theodros Yigzaw, Neeraj Upasani
+🔗 URL: https://patents.google.com/patent/US10296416
+📋 Abstract: A processor of an aspect includes a decode unit to decode a
+            read from memory instruction. The read from memory instruction
+            is to indicate a source memory operand and a destination
+            storage location. The processor also includes an execution unit
+            coupled with the decode unit. The execution unit, in response
+            to the read from memory instruction, is to read data from the
+            source memory operand, store an indication of defective data in
+            an architecturally visible storage location, when the data is
+            defective, and complete execution of the read from memory
+            instruction without causing an exceptional condition, when the
+            data is defective. Other processors, methods, systems, and
+            instructions are disclosed.
+📅 Issue Date: 2019-05-21
+
+================================================================================
+Patent 6 of 29
+================================================================================
+📄 Title: Enabling error status and reporting in a machine check architecture
+🔢 Patent Number: US10318368
+👥 Inventors: Ashok Raj, Theodros Yigzaw
+🔗 URL: https://patents.google.com/patent/US10318368
+📋 Abstract: In accordance with implementations disclosed herein, there is
+            provided systems and methods for enabling error status and
+            reporting in a machine check environment. A processing device
+            includes an error status register and an error status component
+            communicably coupled to the error status register. The error
+            status component determines that a machine check error (MCE) is
+            a first correctable error (CE) and sets a first error status
+            corresponding to the first CE in the error status register
+            based on a threshold value. The threshold value is based on a
+            type of the first CE.
+📅 Issue Date: 2019-06-11
+
+================================================================================
+Patent 7 of 29
+================================================================================
+📄 Title: Hardware apparatuses and methods to check data storage devices for transient faults
+🔢 Patent Number: US10319458
+👥 Inventors: Hisham Shafi, Mohan J. Kumar, Ron Gabor, Ashok Raj, Theodros Yigzaw
+🔗 URL: https://patents.google.com/patent/US10319458
+📋 Abstract: Methods and apparatuses relating to a hardware memory test unit
+            to check a section of a data storage device for a transient
+            fault before the data is stored in and/or loaded from the
+            section of the data storage device are described. In one
+            embodiment, an integrated circuit includes a hardware processor
+            to operate on data in a section of a data storage device, and a
+            memory test unit to check the section of the data storage
+            device for a transient fault before the data is stored in the
+            section of the data storage device, wherein the transient fault
+            is to cause a machine check exception if accessed by the
+            hardware processor.
+📅 Issue Date: 2019-06-11
+
+================================================================================
+Patent 8 of 29
+================================================================================
+📄 Title: System and method to increase availability in a multi-level memory configuration
+🔢 Patent Number: US10324852
+👥 Inventors: Mohan J. Kumar, Robert C. Swanson, Ashok Raj, Theodros Yigzaw
+🔗 URL: https://patents.google.com/patent/US10324852
+📋 Abstract: One embodiment provides for a data processing system comprising
+            a multi-level system memory including a first memory level of
+            volatile memory and a second memory level that is larger and
+            slower in comparison with the first memory level. The second
+            memory level includes non-volatile memory and can additionally
+            include volatile memory. The multi-level system memory includes
+            a multi-level memory controller including logic to manage a
+            list of faulty addresses within the multi-level system memory.
+            The multi-level memory controller can manage a list of faulty
+            addresses. The multi-level memory controller is configured to
+            satisfy a request for data stored in the first memory level
+            from the second memory level when the data is stored in an
+            address on the list of faulty addresses.
+📅 Issue Date: 2019-06-18
+
+================================================================================
+Patent 9 of 29
+================================================================================
+📄 Title: Delayed error processing
+🔢 Patent Number: US10929232
+👥 Inventors: Sarathy Jayakumar, Gaurav Porwal, Subhankar Panda, Theodros Yigzaw
+🔗 URL: https://patents.google.com/patent/US10929232
+📋 Abstract: A computing apparatus, including: a hardware platform including
+            a processor and memory; and a system management interrupt (SMI)
+            handler; first logic configured to provide a first container
+            and a second container via the hardware platform; and second
+            logic configured to: detect an uncorrectable error in the first
+            container; responsive to the detecting, generate a degraded
+            system state; provide a degraded state message to the SMI
+            handler; instruct the second container to seek a recoverable
+            state; determine that the second container has entered a
+            recoverable state; and initiate a recovery operation.
+📅 Issue Date: 2021-02-23
+
+================================================================================
+Patent 10 of 29
+================================================================================
+📄 Title: Apparatus and method for detecting and recovering from data fetch errors
+🔢 Patent Number: US11048587
+👥 Inventors: Hisham Shafi, Mohan J. Kumar, Shlomo Raikin, Ganapati Srinivasa, Ehud Cohen, Zeev Sperber, Jose A. Vargas, Michael Mishaeli, Theodros Yigzaw, Julius Mandelblat, Geeyarpuram N. Santhanakrishnan
+🔗 URL: https://patents.google.com/patent/US11048587
+📋 Abstract: An apparatus and method are described for detecting and
+            correcting data fetch errors within a processor core. For
+            example, one embodiment of an instruction processing apparatus
+            for detecting and recovering from data fetch errors comprises:
+            at least one processor core having a plurality of instruction
+            processing stages including a data fetch stage and a retirement
+            stage; and error processing logic in communication with the
+            processing stages to perform the operations of: detecting an
+            error associated with data in response to a data fetch
+            operation performed by the data fetch stage; and responsively
+            performing one or more operations to ensure that the error does
+            not corrupt an architectural state of the processor core within
+            the retirement stage.
+📅 Issue Date: 2021-06-29
+
+================================================================================
+Patent 11 of 29
+================================================================================
+📄 Title: Read from memory instructions, processors, methods, and systems, that do not take exception on defective data
+🔢 Patent Number: US11068339
+👥 Inventors: Hisham Shafi, Mohan J. Kumar, Sarathy Jayakumar, Ron Gabor, Sergiu D. Ghetie, Ashok Raj, Theodros Yigzaw, Neeraj Upasani
+🔗 URL: https://patents.google.com/patent/US11068339
+📋 Abstract: A processor of an aspect includes a decode unit to decode a
+            read from memory instruction. The read from memory instruction
+            is to indicate a source memory operand and a destination
+            storage location. The processor also includes an execution unit
+            coupled with the decode unit. The execution unit, in response
+            to the read from memory instruction, is to read data from the
+            source memory operand, store an indication of defective data in
+            an architecturally visible storage location, when the data is
+            defective, and complete execution of the read from memory
+            instruction without causing an exceptional condition, when the
+            data is defective. Other processors, methods, systems, and
+            instructions are disclosed.
+📅 Issue Date: 2021-07-20
+
+================================================================================
+Patent 12 of 29
+================================================================================
+📄 Title: System, apparatus and method for memory mirroring in a buffered memory architecture
+🔢 Patent Number: US11182313
+👥 Inventors: Ishwar Agarwal, Theodros Yigzaw
+🔗 URL: https://patents.google.com/patent/US11182313
+📋 Abstract: In one embodiment, an apparatus includes: a first memory
+            controller to control access to a first memory, the first
+            memory controller including a memory mirroring circuit, in
+            response to a memory write request from a first processor
+            socket for which the first memory comprises a primary memory
+            region, to cause data associated with the memory write request
+            to be written to the first memory and to send a shadow memory
+            write request to a second memory to cause the second memory to
+            write the data into a secondary memory region; and a shadow
+            memory table including a plurality of entries each to store an
+            association between a primary memory region and a secondary
+            memory region. The memory mirroring circuit may access the
+            shadow memory table to identify the secondary memory region.
+            Other embodiments are described and claimed.
+📅 Issue Date: 2021-11-23
+
+================================================================================
+Patent 13 of 29
+================================================================================
+📄 Title: Hardware unit for reverse translation in a processor
+🔢 Patent Number: US11307996
+👥 Inventors: Sarathy Jayakumar, Wei-Pin Chen, Ashok Raj, Theodros Yigzaw, John G. Holm
+🔗 URL: https://patents.google.com/patent/US11307996
+📋 Abstract: In an embodiment, a processor for reverse translation includes
+            a plurality of processing engines (PEs) to execute threads and
+            a reverse translation circuit. The reverse translation circuit
+            is to: determine a target module address of a corrupt portion
+            of a memory module; determine a plurality of system physical
+            address (SPA) addresses associated with the memory module; and
+            for each SPA address in the plurality of SPA addresses,
+            translate the SPA address into a translated module address, and
+            in response to a determination that the translated module
+            address matches the target module address, log the SPA address
+            as a result of a reverse translation of the target module
+            address. Other embodiments are described and claimed.
+📅 Issue Date: 2022-04-19
+
+================================================================================
+Patent 14 of 29
+================================================================================
+📄 Title: Device, system, and method to concurrently store multiple PMON counts in a single register
+🔢 Patent Number: US12044730
+👥 Inventors: Gaurav Porwal, Subhankar Panda, Theodros Yigzaw, John G. Holm
+🔗 URL: https://patents.google.com/patent/US12044730
+📋 Abstract: Techniques and mechanisms for providing performance monitoring
+            information. In an embodiment, a performance monitor circuit
+            receives a communication which indicates a format comprising
+            multiple fields which are each to store a respective count of
+            monitored events. A programming of the performance monitor
+            circuit, based on the communication, designates first bits and
+            second bits of the register to provide, respectively, a first
+            first field and a second field according to the format.
+            Performance monitoring subsequent to the programming
+            successively tallies a first count of first events which occur
+            during a first period of time, and a second count of second
+            events which occur during a second period of time. In another
+            embodiment, performance monitoring results in the register
+            concurrently storing both the first count and the second count.
+📅 Issue Date: 2024-07-23
+
+================================================================================
+Patent 15 of 29
+================================================================================
+📄 Title: Cloud scale server reliability management
+🔢 Patent Number: US12189468
+👥 Inventors: Subhankar Panda, Theodros Yigzaw, John G. Holm, Guarav Porwal, Omar Avelar Suarez, Satyaprakash Nanda, Hugo Enrique Gonzalez Chavero
+🔗 URL: https://patents.google.com/patent/US12189468
+📋 Abstract: An embodiment of an electronic apparatus may comprise one or
+            more substrates, and a controller coupled to the one or more
+            substrates, the controller including circuitry to provide
+            management of a connected hardware subsystem with respect to
+            one or more of reliability, availability and serviceability,
+            and coordinate the management of the connected hardware
+            subsystem with respect to one or more of reliability,
+            availability and serviceability between the connected hardware
+            subsystem and a host. Other embodiments are disclosed and
+            claimed.
+📅 Issue Date: 2025-01-07
+
+================================================================================
+Patent 16 of 29
+================================================================================
+📄 Title: Apparatus and method for detecting and recovering from data fetch errors
+🔢 Patent Number: US12189479
+👥 Inventors: Hisham Shafi, Mohan J. Kumar, Shlomo Raikin, Ganapati Srinivasa, Ehud Cohen, Zeev Sperber, Jose A. Vargas, Michael Mishaeli, Theodros Yigzaw, Julius Mandelblat, Geeyarpuram N. Santhanakrishnan
+🔗 URL: https://patents.google.com/patent/US12189479
+📋 Abstract: An apparatus and method are described for detecting and
+            correcting data fetch errors within a processor core. For
+            example, one embodiment of an instruction processing apparatus
+            for detecting and recovering from data fetch errors comprises:
+            at least one processor core having a plurality of instruction
+            processing stages including a data fetch stage and a retirement
+            stage; and error processing logic in communication with the
+            processing stages to perform the operations of: detecting an
+            error associated with data in response to a data fetch
+            operation performed by the data fetch stage; and responsively
+            performing one or more operations to ensure that the error does
+            not corrupt an architectural state of the processor core within
+            the retirement stage.
+📅 Issue Date: 2025-01-07
+
+================================================================================
+Patent 17 of 29
+================================================================================
+📄 Title: Adaptive error correction to improve system memory reliability, availability, and serviceability (RAS)
+🔢 Patent Number: US12235720
+👥 Inventors: Kuljit S. Bains, Jing Ling, Wei-Pin Chen, Wei Wu, Rajat Agarwal, Vaibhav Singh, Andrew M. Rudoff, Deep Buch, Theodros Yigzaw, John G. Holm, Kjersten E. Criss, Sreenivas Mandava, Hsing-Min Chen
+🔗 URL: https://patents.google.com/patent/US12235720
+📋 Abstract: A memory subsystem includes memory devices with space
+            dynamically allocated for improvement of reliability,
+            availability, and serviceability (RAS) in the system. Error
+            checking and correction (ECC) logic detects an error in all or
+            a portion of a memory device. In response to error detection,
+            the system can dynamically perform one or more of: allocate
+            active memory device space for sparing to spare a failed memory
+            segment; write a poison pattern into a failed cacheline to mark
+            it as failed; perform permanent fault detection (PFD) and
+            adjust application of ECC based on PFD detection; or, spare
+            only a portion of a device and leave another portion active,
+            including adjusting ECC based on the spared portion. The error
+            detection can be based on bits of an ECC device, and error
+            correction based on those bits and additional bits stored on
+            the data devices.
+📅 Issue Date: 2025-02-25
+
+================================================================================
+Patent 18 of 29
+================================================================================
+📄 Title: Performance prioritization in multi-threaded processors
+🔢 Patent Number: US8275942
+👥 Inventors: Ganapati Srinivasa, Mark Rowland, Theodros Yigzaw, Geeyarpuram N. Santhanakrishnan
+🔗 URL: https://patents.google.com/patent/US8275942
+📋 Abstract: According to one embodiment of the invention, a method is
+            disclosed for selecting a first subset of a plurality of cache
+            ways in a cache for storing hardware threads identified as high
+            priority hardware threads for processing by a multi-threaded
+            processor in communication with the cache; assigning high
+            priority hardware threads to the selected first subset;
+            monitoring a cache usage of a high priority hardware thread
+            assigned to the selected first subset of plurality of cache
+            ways; and reassigning the assigned high priority hardware
+            thread to any cache way of the plurality of cache ways if the
+            cache usage of the high priority hardware thread exceeds a
+            predetermined inactive cache usage threshold value based on the
+            monitoring.
+📅 Issue Date: 2012-09-25
+
+================================================================================
+Patent 19 of 29
+================================================================================
+📄 Title: Injecting a data error into a writeback path to memory
+🔢 Patent Number: US8645797
+👥 Inventors: Mohan J. Kumar, Yen-Cheng Liu, Jose A. Vargas, Theodros Yigzaw
+🔗 URL: https://patents.google.com/patent/US8645797
+📋 Abstract: In one embodiment, a processor includes error injection
+            circuitry separate and independent of debug circuitry of the
+            processor. This circuitry can be used by a software developer
+            to seed errors into a write-back path to system memory to
+            emulate errors for purposes of validation of error recovery
+            code of the software. The circuitry can include a register to
+            store an address within the system memory at which an error is
+            to be injected, a detection logic to detect when an instruction
+            associated with the address is issued, and injection logic to
+            cause the error to be injected into the address within the
+            system memory responsive to the detection of the instruction.
+            Other embodiments are described and claimed.
+📅 Issue Date: 2014-02-04
+
+================================================================================
+Patent 20 of 29
+================================================================================
+📄 Title: Mechanism for advanced server machine check recovery and associated system software enhancements
+🔢 Patent Number: US8671309
+👥 Inventors: Mohan J. Kumar, Ashok Raj, Theodros Yigzaw, Narayan Ranganathan
+🔗 URL: https://patents.google.com/patent/US8671309
+📋 Abstract: Embodiments of a hardware processor including a plurality of
+            machine state registers (MSRs) are described. At least one of
+            the MSRs includes an erroring logical processing (ELP) bit
+            which when set, indicates that a particular thread executing on
+            the hardware processor caused an error.
+📅 Issue Date: 2014-03-11
+
+================================================================================
+Patent 21 of 29
+================================================================================
+📄 Title: Machine check summary register
+🔢 Patent Number: US9317360
+👥 Inventors: Mohan J. Kumar, James B. Crossland, Murugasamy K. Nachimuthu, Jose A. Vargas, Theodros Yigzaw
+🔗 URL: https://patents.google.com/patent/US9317360
+📋 Abstract: In some implementations, a processor may include a machine
+            check architecture having a plurality of error reporting
+            registers able to receive data for machine check errors. A
+            summary register may include a plurality of settable locations
+            that each represents at least one of the error reporting
+            registers. One or more of the settable locations in the summary
+            register may be set to indicate whether one or more of the
+            error reporting registers maintain data for a machine check
+            error. Accordingly, when a machine check error occurs, the
+            summary register may be accessed to identify if any error
+            reporting registers in a processor's view contain valid error
+            data, rather than having to read each of the error reporting
+            registers in the processor's view.
+📅 Issue Date: 2016-04-19
+
+================================================================================
+Patent 22 of 29
+================================================================================
+📄 Title: Secure error handling
+🔢 Patent Number: US9342394
+👥 Inventors: Mohan J. Kumar, Murugasamy K. Nachimuthu, Jose A. Vargas, Theodros Yigzaw, Rajender Kuramkote
+🔗 URL: https://patents.google.com/patent/US9342394
+📋 Abstract: Various embodiments are described herein. Some embodiments
+            include an Operating System and a platform. The platform
+            includes a processor having an error register. The Operating
+            System can write to the error register only via the platform in
+            a secure manner (for example, using platform firmware). Other
+            embodiments are described and claimed.
+📅 Issue Date: 2016-05-17
+
+================================================================================
+Patent 23 of 29
+================================================================================
+📄 Title: Apparatus and method for implement a multi-level memory hierarchy
+🔢 Patent Number: US9448879
+👥 Inventors: Hisham Shafi, Mohan J. Kumar, Larisa Novakovsky, Ganapati Srinivasa, Lihu Rappoport, Jose A. Vargas, Michael Mishaeli, Theodros Yigzaw, Julius Mandelblat, Oded Lempel, Chen Koren, Geeyarpuram N. Santhanakrishnan
+🔗 URL: https://patents.google.com/patent/US9448879
+📋 Abstract: An apparatus and method are described for detecting and
+            correcting instruction fetch errors within a processor core.
+            For example, in one embodiment, an instruction processing
+            apparatus for detecting and recovering from instruction fetch
+            errors comprises, the instruction processing apparatus
+            performing the operations of: detecting an error associated
+            with an instruction in response to an instruction fetch
+            operation; and determining if the instruction is from a
+            speculative access, wherein if the instruction is not from a
+            speculative access, then responsively performing one or more
+            operations to ensure that the error does not corrupt an
+            architectural state of the processor core.
+📅 Issue Date: 2016-09-20
+
+================================================================================
+Patent 24 of 29
+================================================================================
+📄 Title: Hardware apparatuses and methods to check data storage devices for transient faults
+🔢 Patent Number: US9595349
+👥 Inventors: Hisham Shafi, Mohan J. Kumar, Ron Gabor, Ashok Raj, Theodros Yigzaw
+🔗 URL: https://patents.google.com/patent/US9595349
+📋 Abstract: Methods and apparatuses relating to a hardware memory test unit
+            to check a section of a data storage device for a transient
+            fault before the data is stored in and/or loaded from the
+            section of the data storage device are described. In one
+            embodiment, an integrated circuit includes a hardware processor
+            to operate on data in a section of a data storage device, and a
+            memory test unit to check the section of the data storage
+            device for a transient fault before the data is stored in the
+            section of the data storage device, wherein the transient fault
+            is to cause a machine check exception if accessed by the
+            hardware processor.
+📅 Issue Date: 2017-03-14
+
+================================================================================
+Patent 25 of 29
+================================================================================
+📄 Title: Recovery from multiple data errors
+🔢 Patent Number: US9690640
+👥 Inventors: Stanislav Shwartsman, Raanan Sade, Ron Gabor, Deep Buch, Theodros Yigzaw
+🔗 URL: https://patents.google.com/patent/US9690640
+📋 Abstract: Mechanisms for handling multiple data errors that occur
+            simultaneously are provided. A processing device may determine
+            whether multiple data errors occur in memory locations that are
+            within a range of memory locations. If the multiple memory
+            locations are within the range of memory locations, the
+            processing device may continue with a recovery process. If one
+            of the multiple memory locations is outside of the range of
+            memory locations, the processing device may halt the recovery
+            process.
+📅 Issue Date: 2017-06-27
+
+================================================================================
+Patent 26 of 29
+================================================================================
+📄 Title: Method to increase cloud availability and silicon isolation using secure enclaves
+🔢 Patent Number: US9798641
+👥 Inventors: Vincent J. Zimmer, Raghunandan Makaram, Robert C. Swanson, Eswaramoorthi Nallusamy, Theodros Yigzaw
+🔗 URL: https://patents.google.com/patent/US9798641
+📋 Abstract: Methods and apparatus to increase cloud availability and
+            silicon isolation using secure enclaves. A compute platform is
+            configured to host a compute domain in which a plurality of
+            secure enclaves are implemented. In conjunction with creating
+            and deploying secure enclaves, mapping information is generated
+            that maps the secure enclaves to platform/CPU resources, such
+            as Intellectual Property blocks (IP) belong to the secure
+            enclaves. In response to platform error events caused by errant
+            platform/CPU resources, the secure enclave(s) belonging to the
+            errant platform/CPU are identified via the mapping information,
+            and an interrupt is directed to that/those secure enclave(s).
+            In response to the interrupt, a secure enclave may be
+            configured to one or more of handle the error, pass information
+            to another secure enclave, and teardown the enclave. The secure
+            enclave may execute an interrupt service routine that causes
+            the errant platform/CPU resource to reset without resetting the
+            entire platform or CPU, as applicable.
+📅 Issue Date: 2017-10-24
+
+================================================================================
+Patent 27 of 29
+================================================================================
+📄 Title: Clearing poison status on read accesses to volatile memory regions allocated in non-volatile memory
+🔢 Patent Number: US9817738
+👥 Inventors: Raj K. Ramanujan, Richard P. Mangold, Camille C. Raad, Theodros Yigzaw
+🔗 URL: https://patents.google.com/patent/US9817738
+📋 Abstract: Systems and methods may provide for detecting that a read
+            operation is directed to a memory region while the memory
+            region is in a poisoned state and clearing the poisoned state
+            if volatile data stored in the memory region does not
+            correspond to a known data pattern. Additionally, the memory
+            region may be maintained in the poisoned state if the volatile
+            data stored in the memory region corresponds to the known data
+            pattern. In one example, an error may be detected, wherein the
+            error is associated with a write operation directed to the
+            memory region. In such a case, the poisoned state may be set
+            for the volatile data in response to the error and the known
+            data pattern may be written to the memory region.
+📅 Issue Date: 2017-11-14
+
+================================================================================
+Patent 28 of 29
+================================================================================
+📄 Title: Instruction and logic for machine checking communication
+🔢 Patent Number: US9842015
+👥 Inventors: Mohan J. Kumar, James B. Crossland, Ashok Raj, Jose A. Vargas, Theodros Yigzaw, William G. Auld, Cameron McNairy, Anthony Luck
+🔗 URL: https://patents.google.com/patent/US9842015
+📋 Abstract: A processor includes a logic to determine an error condition
+            reported in an error bank. The error bank is communicatively
+            coupled to the processor and is associated with logical
+            processors of the processor. The processor includes another
+            logic to generate an interrupt indicating the error condition.
+            The processor includes yet another logic to selectively send
+            the interrupt to a single one of the logical processors
+            associated with the error bank.
+📅 Issue Date: 2017-12-12
+
+================================================================================
+Patent 29 of 29
+================================================================================
+📄 Title: Interfacing with block-based storage in a processor
+🔢 Patent Number: US9904586
+👥 Inventors: Hisham Shafi, Mohan J. Kumar, Ron Gabor, Ashok Raj, Theodros Yigzaw
+🔗 URL: https://patents.google.com/patent/US9904586
+📋 Abstract: In one embodiment, a processor includes a core having a fetch
+            unit to fetch instructions, a decode unit to decode the
+            instructions, and one or more execution units to execute the
+            instructions. The core may further include: a first pair of
+            block address range registers to store a start location and an
+            end location of a block range within a non-volatile block
+            storage coupled to the processor; and a block status storage to
+            store an error indicator responsive to an occurrence of an
+            error within the block range during a block operation. Other
+            embodiments are described and claimed.
+📅 Issue Date: 2018-02-27
+
+================================================================================
+Total: 29 patents
+
+📊 Patent Portfolio Summary:
+• **29 total patents**
+• Patent timeline: **2012 - 2025** (14 years)
+• Patent numbers range: **8275942** to **12235720**
+• Key technology areas:
+  - **Memory & Cache Management** (14 patents)
+  - **Virtualization & I/O** (1 patents)
+  - **Error Handling & Machine Check** (10 patents)
+  - **Processor Performance & Interrupts** (1 patents)
+  - **System Management** (2 patents)
+• Average innovation rate: **2.1 patents/year**

@@ -8,11 +8,17 @@ Python tools to extract patents from USPTO and prepare them for LinkedIn profile
 Searches for patents where you're listed as an inventor and formats the data for LinkedIn.
 
 **Features:**
-- Uses USPTO's PatentsView API with exact name matching
+- Uses USPTO's PatentsView API with exact name matching (fuzzy matching has limitations)
 - Filters by assignee/company name to avoid false matches
 - Multiple output formats: JSON, CSV, table view, detailed view
 - Portfolio analysis with technology categorization
+- Experimental fuzzy matching (limited by API data coverage)
 - Outputs both raw USPTO data and LinkedIn-formatted data
+
+**⚠️ API Limitations:**
+- PatentsView API has incomplete inventor indexing - not all co-inventors are searchable
+- Some inventors appear in patent details but aren't indexed for direct search
+- Recommended approach: Search known collaborators and examine co-inventor lists
 
 ### 2. LinkedIn Patent Uploader (`linkedin_patent_uploader.py`)
 ⚠️ **UNTESTED** - Uploads patent data to your LinkedIn profile via LinkedIn's API.
@@ -88,6 +94,13 @@ python3 uspto_patent_extractor.py "Jane Doe" \
   --assignee "Tech Corporation" \
   --api-key YOUR_USPTO_API_KEY \
   --detail -o detailed_patents.json
+
+# Fuzzy matching for names with middle initials
+python3 uspto_patent_extractor.py "John Smith" \
+  --assignee "Tech Corporation" \
+  --api-key YOUR_USPTO_API_KEY \
+  --fuzzy --list
+# This will find "John M. Smith", "John A. Smith", etc.
 ```
 
 ### Example Output (Detailed View)
@@ -117,6 +130,43 @@ Patent 1 of 25
   - **User Interface Design** (2 patents)
 • Average innovation rate: **2.8 patents/year**
 ```
+
+### Fuzzy Name Matching
+
+⚠️ **Limited Effectiveness** - The `--fuzzy` option has known limitations due to USPTO API constraints:
+
+```bash
+# Fuzzy search attempts (may not work as expected)
+python3 uspto_patent_extractor.py "John Smith" --api-key YOUR_KEY --fuzzy --list
+python3 uspto_patent_extractor.py "Robert Johnson" --api-key YOUR_KEY --fuzzy --list
+```
+
+**How fuzzy matching works (when functional):**
+- Uses USPTO's `_text_any` operator to search full inventor names
+- Attempts partial matching for names with middle initials
+- Falls back to exact field matching if text search fails
+
+**Known limitations:**
+- ❌ **API data gaps**: USPTO PatentsView API has incomplete inventor indexing
+- ❌ **Co-inventor search issues**: Many co-inventors aren't indexed for primary search
+- ❌ **Inconsistent results**: Same inventor may appear in patent details but not be searchable
+- ❌ **Server errors**: Complex queries sometimes cause 500 server errors
+
+**Recommended workaround for finding co-inventors:**
+1. Search patents of known collaborators (who do have indexed patents)
+2. Examine co-inventor lists in the detailed output
+3. Use the exact spelling found in those lists for subsequent searches
+
+```bash
+# Example: Find co-inventors by searching a known inventor
+python3 uspto_patent_extractor.py "Known Collaborator" --api-key YOUR_KEY --detail
+# Look at the inventor lists to find exact spellings of other inventors
+```
+
+**When fuzzy search may help:**
+- ✅ For inventors who already have some patents indexed in the API
+- ✅ For simple name variations without complex middle initials
+- ⚠️ Not reliable for comprehensive co-inventor discovery
 
 ### Manual LinkedIn Upload (Recommended)
 The detailed view format makes manual LinkedIn upload easy:

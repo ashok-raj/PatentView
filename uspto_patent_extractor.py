@@ -26,10 +26,11 @@ class PatentExtractor:
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         })
         
-    def search_patents_by_inventor(self, inventor_name: str, assignee_name: Optional[str] = None) -> List[Dict[str, Any]]:
+    def search_patents_by_inventor(self, inventor_name: str, assignee_name: Optional[str] = None, fuzzy: bool = False) -> List[Dict[str, Any]]:
         """
         Search for patents by inventor name using multiple sources
         """
+        self.fuzzy_match = fuzzy
         patents = []
         
         # Try USPTO PatentsView API if we have a key
@@ -45,15 +46,23 @@ class PatentExtractor:
         return self._remove_duplicates(patents)
     
     def _search_patents_view(self, inventor_name: str, assignee_name: Optional[str] = None) -> List[Dict[str, Any]]:
-        """Search PatentsView API"""
-        name_parts = inventor_name.split()
-        first_name = name_parts[0] if len(name_parts) > 0 else ""
-        last_name = name_parts[-1] if len(name_parts) > 1 else name_parts[0]
+        """Search PatentsView API using improved text search"""
         
-        query_conditions = [
-            {"inventors.inventor_name_first": first_name},
-            {"inventors.inventor_name_last": last_name}
-        ]
+        if hasattr(self, 'fuzzy_match') and self.fuzzy_match:
+            # Use text search for fuzzy matching - simpler approach
+            query_conditions = [
+                {"_text_any": {"inventors.inventor_name": inventor_name}}
+            ]
+        else:
+            # Use exact field matching for precise results
+            name_parts = inventor_name.split()
+            first_name = name_parts[0] if len(name_parts) > 0 else ""
+            last_name = name_parts[-1] if len(name_parts) > 1 else name_parts[0]
+            
+            query_conditions = [
+                {"inventors.inventor_name_first": first_name},
+                {"inventors.inventor_name_last": last_name}
+            ]
         
         if assignee_name:
             query_conditions.append({"assignees.assignee_organization": assignee_name})
@@ -111,10 +120,23 @@ class PatentExtractor:
                     first_name = inventor.get('inventor_name_first', '').lower().strip()
                     last_name = inventor.get('inventor_name_last', '').lower().strip()
                     
-                    # Exact match only - no fuzzy matching to avoid name clashes
-                    if (first_name == target_first and last_name == target_last):
+                    # Check for match based on fuzzy setting
+                    match_found = False
+                    if hasattr(self, 'fuzzy_match') and self.fuzzy_match:
+                        # Fuzzy matching: allow partial matches for middle initials
+                        first_match = (first_name.startswith(target_first) or target_first.startswith(first_name))
+                        last_match = (last_name == target_last)
+                        if first_match and last_match and len(target_first) >= 2:  # Minimum 2 chars to avoid too broad matches
+                            match_found = True
+                            print(f"✓ Fuzzy match found: {first_name.title()} {last_name.title()} - {patent.get('patent_title', 'Unknown')}")
+                    else:
+                        # Exact match only
+                        if (first_name == target_first and last_name == target_last):
+                            match_found = True
+                            print(f"✓ Exact match found: {first_name.title()} {last_name.title()} - {patent.get('patent_title', 'Unknown')}")
+                    
+                    if match_found:
                         inventor_match = True
-                        print(f"✓ Exact match found: {first_name.title()} {last_name.title()} - {patent.get('patent_title', 'Unknown')}")
                         break
                 
                 if inventor_match:
@@ -553,6 +575,7 @@ def main():
     parser.add_argument('--use-google', action='store_true', help='Use Google Patents search instead of USPTO API')
     parser.add_argument('--list', action='store_true', help='Display patents in table format (Patent Number and Title only)')
     parser.add_argument('--detail', action='store_true', help='Display patents in detailed format (Title, Number, Inventors, URL, Abstract)')
+    parser.add_argument('--fuzzy', action='store_true', help='Enable fuzzy matching for names with middle initials (e.g., "John M. Smith" matches "John Smith")')
     
     args = parser.parse_args()
     
@@ -568,12 +591,14 @@ def main():
         search_desc += f" assigned to: {args.assignee}"
     if args.use_google:
         search_desc += " (using Google Patents)"
+    if args.fuzzy:
+        search_desc += " (fuzzy matching enabled)"
     print(search_desc)
     
     if args.use_google:
         patents = extractor._search_google_patents(args.inventor_name, args.assignee)
     else:
-        patents = extractor.search_patents_by_inventor(args.inventor_name, args.assignee)
+        patents = extractor.search_patents_by_inventor(args.inventor_name, args.assignee, args.fuzzy)
     
     if not patents:
         print("No patents found for the specified inventor and assignee.")
